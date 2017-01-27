@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I have always liked the technology, mainly, those in video game consoles. My favorite reads were about technical specifications. When I was 16 year, I entered to workshop of Computation at the high school, there, I learned the logic to programming and discovery the marvel recursion. For myself I learned Java, JavaScript, VBScript and Flash 5.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+So, I chose to study mathematics at Science Faculty of the UNAM with a approach in the computer science to be a better software developer. Thanks to my previous studies in programming I approved easily the course that required implement some program, about the half of these. My favorite course was Languages of Programing and its paradigms. In the course I learned the essence of the programming languages and my favorite paradigm was "the functional".
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I like to write clean, readable and maintainable code. I take pride in code.
