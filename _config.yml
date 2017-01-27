@@ -30,3 +30,13 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+defaults:
+  -
+    scope:
+      path: ""
+      type:
+        - pages
+        - posts
+    values:
+      layout: post
+
