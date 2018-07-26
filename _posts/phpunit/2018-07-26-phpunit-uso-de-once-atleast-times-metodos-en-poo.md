@@ -2,7 +2,7 @@
 layout: post
 title:  "PHPUnit: Uso de atLeast, once y times en POO"
 date:   2018-07-26 12:47:20 -0600
-categories: phpunit, testing
+categories: phpunit testing
 ---
 ## Introducción
 
@@ -64,9 +64,7 @@ public function testChargeWithDebitCard()
 	$transactionRepository
 		->shouldNotReceive('save');
 
-	$paymentService = new \App\Payment\PaymentService(
-		$transactionRepository
-	);
+	$paymentService = new \App\Payment\PaymentService($transactionRepository);
 
 	$debitCardPayment = new \App\Payment\DataTypes\Payment();
 	$debitCardPayment->setCard(Payment::DEBIT_CARD);
@@ -108,7 +106,7 @@ public function testMaxAttemptReached()
 		->andReturn(3);
 
 	$notifer = new \App\Notifier();
-	$notifier->notify();
+	$notifier->notify($email);
 
 	self::assertTrue(true);
 }
