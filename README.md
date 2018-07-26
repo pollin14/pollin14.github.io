@@ -7,3 +7,9 @@
  ```
  gem install jekyll bundler
  ```
+ 
+ ### Run
+ 
+ ```bash
+ bundle exec jekyll serve
+ ```

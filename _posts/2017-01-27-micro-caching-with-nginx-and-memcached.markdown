@@ -1,7 +1,8 @@
 ---
+layout: post
 title:  "Micro-caching with Nginx and Memcached"
-date:   2017-01-27 12:47:20 -0600
-categories: infrastructure
+date:   2018-07-26 15:52:14 -0500
+categories: jekyll update
 ---
 
 ## Introduction
