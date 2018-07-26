@@ -6,11 +6,11 @@ categories: phpunit testing
 ---
 ## Introducción
 
-Muchas veces en las pruebas únitarias y funcionales existen dudas y discuciones acerca de que probar y que no. En esta entrada muestro cuando usar los métodos `atLeast`, `once` y `times` para hacer pruebas siempre desde un punto de vista orientado a objetos.
+Muchas veces en las pruebas existen dudas y discuciones acerca de que probar y que no. En esta entrada muestro cuando usar los métodos `atLeast`, `once` y `times` para hacer pruebas siempre desde un punto de vista orientado a objetos.
 
-## Probando 
+## Garantizando la ejecucin de un método cero, una o mas veces
 
-En una prueba estos métodos deberían ser usados cuando necesitas garantizar que un método dentro del código en prueba es ejecutado, cero, una o más veces, y el código en prueba siempre regresa el mismo valor sin importar si este método se ejecuta o no. Por ejemplo
+En una prueba los métodos `atLeast`, `once` y `times` deben ser usados cuando es necesario garantizar que un método dentro del código en prueba es ejecutado, cero, una o más veces, y el código en prueba siempre regresa el mismo valor sin importar si este método se ejecuta o no. Por ejemplo
 
 ```php
 
