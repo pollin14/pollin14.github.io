@@ -48,9 +48,7 @@ public function testChargeWithCreditCard()
 }
 ```
 
-En esta prueba, primero creamos una imitación de `TransactionRepository`, dándole, en el primer parámetro, un nombre y en el segundo una interfaz que debe cumplir. Hacer que nuestra imitación implemente una cierta interface hace que nuestra prueba sea más simple debido que podemos omitir chequeos de tipos. Esto lo analizaremos en otra entrada.
-
-Luego, le decimos a la imitación como comportarse, es decir, definimos su comportamiento. Le decimos que debe *recibir* una llamada al método `save` exactamente 1 vez. Si el método no es llamado. Notese que no estamos usando el método `with` del imitador para indicar el parámetro que recibirá el método `save` gracias a que indicamos que el imitador usa una interfaz, ponerlo sería redundante. Tampoco estamos usando `andReturn` porque al método en prueba no le interesa el valor que regresa el método `save`, solo le interesa que el método `save` sea llamado con éxito. 
+En esta prueba, primero creamos una imitación de `TransactionRepository`, dándole, en el primer parámetro, un nombre y en el segundo una interfaz que debe cumplir. Luego, le decimos a la imitación como comportarse. Le decimos que debe *recibir* una llamada al método `save` exactamente 1 vez. Si el método no es llamado un error es lanzado y la prueba fallara. Notese que no estamos instruyendo al imitador acerca del valor que recibira el método `save` (omitimos el método `with` del imitador) debido a que indicamos que el imitador usa una interface. Tampoco estamos usando `andReturn` porque al método en prueba no le interesa el valor que regresa el método `save`, solo le interesa que sea llamado con éxito. 
 
 Por ultimo, creamos la clase a probar y ponemos una afirmación.
 
