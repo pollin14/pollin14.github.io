@@ -1,8 +1,7 @@
-# Triggers: las restricciones faltantes de SQL
 ---
 layout: post
-title:  "Triggers: las restricciones faltantes de SQL"
-date:   2018-07-3015:52:14 -0500
+title:  "Triggers: Las restricciones faltantes de SQL"
+date:   2018-07-30 15:52:14 -0500
 categories: sql
 ---
 
