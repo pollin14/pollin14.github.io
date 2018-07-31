@@ -1,13 +1,11 @@
 ---
-
+layout: post
+title:  "Triggers: Las restricciones faltantes de SQL"
+date:   2018-07-30 15:52:14 -0500
+categories: sql
 
 ---
 
-<hr>
-<h2 id="layout-posttitle--triggers-las-restricciones-faltantes-de-sqldate---2018-07-30-155214--0500categories-sql">layout: post<br>
-title:  "Triggers: Las restricciones faltantes de SQL"<br>
-date:   2018-07-30 15:52:14 -0500<br>
-categories: sql</h2>
 <h2 id="introducción">Introducción</h2>
 <p>Un <strong>trigger</strong>  (disparador en español) es código SQL que se ejecuta <em>antes</em> o <em>después</em> de una determinada acción, por ejemplo, antes de insertar o después de actualizar una fila. Su uso y definición son bastante generales pero yo he encontrado un uso poco explotado y muy útil para sistemas con muchas entidades u objetos: restricciones personalizadas.</p>
 <h2 id="las-restricciones-de-sql">Las restricciones de SQL</h2>
